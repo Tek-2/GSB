@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/entete"></include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Mot de passe oublié ?"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Veuillez renseigner votre Email afin de recevoir un lien de réinitialisation du mot de passe"
+        android:backgroundTint="#2E41AA"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Votre email :"
+        android:textColor="#1eb300"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"/>
+
+    <EditText
+        android:id="@+id/main_edittext_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:backgroundTint="#2E41AA"
+        android:hint="exemple@email.com"/>
+
+    <Space
+        android:layout_width="100dp"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/main_button_envoyer"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#1eb300"
+        android:text="Recevoir un lien"/>
+
+
+</LinearLayout>

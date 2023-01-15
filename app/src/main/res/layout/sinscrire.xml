@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/entete"></include>
+
+    <TextView
+        android:labelFor="@id/main_button_sinscrire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="S'inscrire"/>
+
+    <TextView
+        android:labelFor="@id/main_edittext_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Nom :"
+        android:textColor="#1eb300"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/main_edittext_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:hint="Ex: Cohen"
+        android:textSize="15sp" />
+
+    <TextView
+        android:labelFor="@id/main_edittext_prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Prénom :"
+        android:textColor="#1eb300"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/main_edittext_prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:backgroundTint="#2E41AA"
+        android:hint="Ex: Léa"
+        android:textSize="15sp" />
+
+    <TextView
+        android:labelFor="@id/main_edittext_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Email :"
+        android:textColor="#1eb300"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/main_edittext_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:hint="exemple@email.com"
+        android:textSize="15sp">
+
+    </EditText>
+
+    <TextView
+        android:labelFor="@id/main_edittext_mdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Mot de passe :"
+        android:textColor="#1eb300"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/main_edittext_mdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:backgroundTint="#2E41AA"
+        android:hint="Ex: Abc1/"
+        android:textSize="15sp" />
+
+    <TextView
+        android:labelFor="@id/main_edittext_confirmationmdp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Confirmation"
+        android:textColor="#1eb300"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/main_edittext_confirmationmdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:hint="Ex: Abc1/"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Déja inscrit ?"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/main_button_connexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Se connecter"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:textColor="#1eb300"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:linksClickable="true"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_button_sinscrire"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#1eb300"
+        android:padding="16dp"
+        android:text="S'inscrire"
+        android:textColor="#FFFFFF"/>
+
+
+
+</LinearLayout>

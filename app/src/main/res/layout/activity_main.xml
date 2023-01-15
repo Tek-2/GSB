@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/entete" />
+
+    <TextView
+        android:labelFor="@+id/main_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Menu"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/main_button_faf"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:backgroundTint="#1eb300"
+        android:onClick="click_Menu"
+        android:padding="16dp"
+        android:text="frais au forfait"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/main_button_fhf"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#1eb300"
+        android:padding="16dp"
+        android:onClick="click_Menu"
+        android:text="frais hors forfait" />
+
+    <Button
+        android:id="@+id/main_button_fenv"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:backgroundTint="#1eb300"
+        android:onClick="click_Menu"
+        android:padding="16dp"
+        android:text="frais envoyés" />
+
+    <Button
+        android:id="@+id/main_button_parametres"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#1eb300"
+        android:onClick="click_Menu"
+        android:padding="16dp"
+        android:text="paramètres" />
+
+    <Button
+        android:id="@+id/main_button_historique"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:backgroundTint="#1eb300"
+        android:onClick="click_Menu"
+        android:padding="16dp"
+        android:text="Historique des envois" />
+
+    <include layout="@layout/pieddepage"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"/>
+    
+</LinearLayout>

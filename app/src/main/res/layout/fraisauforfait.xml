@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/entete"/>
+
+    <TextView
+        android:id="@+id/main_textview_faf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:text="Frais au forfait"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:labelFor="@id/spinner"
+        android:id="@+id/main_textview_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Type du forfait :"
+        android:textColor="#1eb300"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="#1eb300"
+        android:entries="@array/type_forfait" />
+
+    <Space
+        android:layout_width="100dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:labelFor="@id/main_edittext_quantite"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Quantité :"
+        android:textColor="#1eb300"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/main_edittext_quantite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:hint="Entrez la quantité voulue"/>
+    <Space
+        android:layout_width="100dp"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:labelFor="@id/calendrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Date :"
+            android:textColor="#1eb300"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/calendrier"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="100dp"/>
+    </LinearLayout>
+</LinearLayout>

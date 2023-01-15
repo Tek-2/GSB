@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FR</string>
+    <string name="bienvenue_sur_votre_espace">Bienvenue sur votre espace</string>
+    <string-array name="type_forfait">
+        <item></item>
+        <item>Forfait étape</item>
+        <item>Frais km</item>
+        <item>Nuité hôtel</item>
+        <item>Repas</item>
+        <item>Petit déjeuner</item>
+    </string-array>
+</resources>
